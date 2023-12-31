@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "pages/Home";
 import NotFound from "pages/NotFound";
+import Allproducts from "components/Allproducts";
 const News = React.lazy(() => import("pages/News"));
 const Services = React.lazy(() => import("pages/Services"));
 const Aboutus = React.lazy(() => import("pages/Aboutus"));
@@ -15,6 +16,7 @@ const ProjectRoutes = () => {
           <Route path="/" element={<Contactus />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/home1" element={<Home1 />} />
+          <Route path="/category/jewelery" element={<Allproducts />} />
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/services" element={<Services />} />
           <Route path="/news" element={<News />} />

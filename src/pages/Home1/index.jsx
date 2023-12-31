@@ -89,6 +89,13 @@ const Home1Page = () => {
                         <Text
                           className="common-pointer text-base text-white-A700 w-[70px]"
                           size="txtPoppinsRegular16"
+                          onClick={() => navigate("/category/jewelery")}
+                        >
+                          Products
+                        </Text>
+                        <Text
+                          className="common-pointer text-base text-white-A700 w-[70px]"
+                          size="txtPoppinsRegular16"
                           onClick={() => navigate("/aboutus")}
                         >
                           About us
